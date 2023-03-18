@@ -1,0 +1,103 @@
+
+*{
+    margin: 0px;
+    padding: 0px; 
+}
+/* Signup Page */
+
+.signUpPage{
+    background-color: #128C7E;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.signUp{
+   background-color: #fff;
+   border: 2px solid black;
+   padding: 50px;
+   border-radius: 30px;
+   
+}
+  
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 0.7rem 3.8rem;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: green;
+  }
+
+
+/* Admin Dashboard Page */
+
+  h1{
+    padding: 20px;
+  }
+  .nav{
+    display: flex;
+    background-color: #128C7E;
+    color: #fff;
+  }
+  .adminBody{
+    display: flex;
+  }
+  .adminDetails{
+    margin: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 35%;
+
+  }
+
+  .adminImg{
+    margin:60px 60px 40px 70px;
+    height: 150px;
+    border-radius: 100%;
+  }
+
+  .adminDetails h3{
+    padding: 10px;
+    margin-left: 30px;
+    /* text-align: center; */
+  }
+  .adminInfoBox{
+    background-color: #D9D9D9;
+    height: 250px;
+    width: 350px;
+    border-radius: 20px;
+    margin: 42px;
+  }
+  .adminInfoBox h2{
+    padding: 30px;
+  }
+  .adminBodyRight{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 60px;
+  }
+
+  
