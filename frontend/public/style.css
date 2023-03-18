@@ -6,7 +6,7 @@
 /* Signup Page */
 
 .signUpPage{
-    background-color: #128C7E;
+    background-color: #def2c8;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -37,17 +37,17 @@ label {
     border-radius: 4px;
   }
   
-  button {
+  .signUp button {
     padding: 0.7rem 3.8rem;
-    background-color: #0077cc;
+    background-color: #cb8589;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: green;
+  .signUp button:hover {
+    background-color: #b09e99;
   }
 
 
@@ -98,6 +98,37 @@ label {
     flex-wrap: wrap;
     flex-direction: row;
     margin-left: 60px;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .list{
+    display: flex;
+    padding: 20px;
+    margin: 30px;
+    /* border: 1px solid black; */
+    background-color: #EEEEEE;
+    border-radius: 20px;
+  }
+  .list li{
+    font-size: 30px;
+  }
+  .list button{
+    width: 100px;
+    margin-left: 50px;
+  }
+  .pickUpList{
+    margin: auto; 
+    width: 50%;
+    margin-top: 40px;
+  }
+  .pickUpList ul{
+    list-style-type: none;
+  }
+  .pickUpList h1{
+    text-align: center;
   }
 
   

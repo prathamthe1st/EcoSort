@@ -1,15 +1,13 @@
 import {React,useState} from 'react';
 import axios from 'axios';
-// import { useNavigate } from "react-router-dom";
 
 function SignUpForm() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [response, setResponse] = useState(null);
+    // const [response, setResponse] = useState(null);
   
     const postData = (e) => {
-      // navigate('/login');
       e.preventDefault();
       axios.post('http://127.0.0.1:8000/user/register/', {
         username,
@@ -17,11 +15,12 @@ function SignUpForm() {
         password
       })
       .then(res => {console.log('posting data', res);
-      setResponse(res.data);
+      // setResponse(res.data);
+     
     })
       .catch(err => console.error(err));
     };
-    
+  
 
     return (
 
@@ -61,4 +60,4 @@ function SignUpForm() {
     );
 }
 
-export default SignUpForm 
+export default SignUpForm
