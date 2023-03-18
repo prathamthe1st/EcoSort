@@ -1,27 +1,40 @@
 import {React,useState} from 'react';
+import axios from 'axios';
+// import { useNavigate } from "react-router-dom";
 
 function SignUpForm() {
-    const [name, setName] = useState('');
+    const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [response, setResponse] = useState(null);
   
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      console.log({ name, email, password });
+    const postData = (e) => {
+      // navigate('/login');
+      e.preventDefault();
+      axios.post('http://127.0.0.1:8000/user/register/', {
+        username,
+        email,
+        password
+      })
+      .then(res => {console.log('posting data', res);
+      setResponse(res.data);
+    })
+      .catch(err => console.error(err));
     };
-  
+    
+
     return (
 
       <div className='signUpPage'>
       <h1>Sign In</h1>
-      <form onSubmit={handleSubmit} className='signUp'>
+      <form onSubmit={postData} className='signUp'>
         <div>
           <label>Name</label>
           <input
             type="text"
-            id="name"
-            value={name}
-            onChange={(event) => setName(event.target.value)}
+            id="username"
+            value={username}
+            onChange={(event) => setUsername(event.target.value)}
           />
         </div>
         <div>
@@ -48,4 +61,4 @@ function SignUpForm() {
     );
 }
 
-export default SignUpForm
+export default SignUpForm 
