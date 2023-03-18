@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     "wmapp",
     "user",
+    "corsheaders",
 
 
 
@@ -63,6 +64,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     "corsheaders.middleware.CorsMiddleware",
 ]
 
@@ -116,6 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/

@@ -4,6 +4,12 @@ import AdminDashboard from "./Pages/adminDashboard";
 import Home from "./Pages/home";
 import Signup from "./Pages/signup";
 import Login from "./Pages/login";
+import UserDashboard from "./Pages/userDashboard";
+import Pickups from "./Pages/pickups";
+import Stats from "./Pages/stats";
+import Trucks from "./Pages/trucks";
+import Workforce from "./Pages/workforce";
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -21,6 +27,26 @@ function App() {
     {
       path: "/login",
       element: <Login/>,
+    },
+    {
+      path: "/userDashboard",
+      element: <UserDashboard />,
+    },
+    {
+      path: "/pickups",
+      element: <Pickups/>,
+    },
+    {
+      path: "/stats",
+      element: <Stats/>,
+    },
+    {
+      path: "/trucks",
+      element: <Trucks/>,
+    },
+    {
+      path: "/workforce",
+      element: <Workforce/>,
     },
   ]);
   return (

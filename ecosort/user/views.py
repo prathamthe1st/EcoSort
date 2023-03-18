@@ -13,6 +13,7 @@ from knox.views import LoginView as KnoxLoginView
 from .serializer import UserSerializer, RegisterSerializer
 
 # Register API
+#8000/user/register
 class RegisterAPI(generics.GenericAPIView):
     serializer_class = RegisterSerializer
 
@@ -25,7 +26,7 @@ class RegisterAPI(generics.GenericAPIView):
         "token": AuthToken.objects.create(user)[1]
         })
 
-
+#8000/user/login
 class LoginAPI(KnoxLoginView):
     permission_classes = (permissions.AllowAny,)
 

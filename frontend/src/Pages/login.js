@@ -1,19 +1,28 @@
 import {React,useState} from 'react';
+import axios from 'axios';
 
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    // const [response, setResponse] = useState(null);
   
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      console.log({email, password });
+  
+    const postData = (e) => {
+      e.preventDefault();
+      axios.post('http://127.0.0.1:8000/user/register/', {
+        email,
+        password
+      })
+      .then(res => {console.log('posting data', res);
+      // setResponse(res.data);
+    })
+      .catch(err => console.error(err));
     };
-  
     return (
 
       <div className='signUpPage'>
       <h1>Login In</h1>
-      <form onSubmit={handleSubmit} className='signUp'>
+      <form onSubmit={postData} className='signUp'>
   
         <div>
           <label>Email</label>

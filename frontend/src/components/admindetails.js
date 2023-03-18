@@ -11,7 +11,6 @@ function Admindetails() {
       <h3>Location: Mumbai</h3>
       <h3>Email: yeole@gmail.com</h3>
 
-
       </div>
 
     </div>
