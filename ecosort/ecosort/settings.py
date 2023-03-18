@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     
     "rest_framework",
     "knox",
+    "corsheaders",
 
     "wmapp",
     "user",
@@ -62,6 +63,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "ecosort.urls"
