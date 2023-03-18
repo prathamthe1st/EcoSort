@@ -10,4 +10,5 @@ router.register(r'pickup', PickupViewset)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('statistics/', statistics, name='statistics')
 ]

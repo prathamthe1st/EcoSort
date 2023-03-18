@@ -7,7 +7,6 @@ class TruckSerializer(serializers.HyperlinkedModelSerializer):
         fields = '__all__'
 
 
-
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Employee
@@ -18,3 +17,8 @@ class PickupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Pickup
         fields = '__all__'
+
+class StatisticsSerializer(serializers.Serializer):
+    pickup_count = serializers.IntegerField()
+    employee_count = serializers.IntegerField()
+    truck_count = serializers.IntegerField()
