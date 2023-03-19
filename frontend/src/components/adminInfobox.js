@@ -6,6 +6,7 @@ function AdminInfoBox(props) {
   return (
     <div className='adminInfoBox'>
     <h2><Link to={props.Route}>{props.Title}</Link></h2>
+    <h1>{props.data}</h1>
     </div>
   )
 }

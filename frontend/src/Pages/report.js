@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios';
+import Camera from '../components/camera';
 
 function Report() {
     const[location,setLocation] = useState('');
@@ -26,6 +27,7 @@ function Report() {
             <input className='reportInput' type="text" onChange={(event) => setImage(event.target.value)} placeholder='Description'/>
             <button>Submit</button>
         </form>
+        <Camera/>
     </div>
   )
 }

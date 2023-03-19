@@ -136,6 +136,11 @@ label {
   .pickUpList h1{
     text-align: center;
   }
+  .adminInfoBox h1{
+    font-size: 70px;
+    text-align: center;
+  }
+  
   @media (min-width: 320px) {
    .userDashboard h1{
     color: white;
