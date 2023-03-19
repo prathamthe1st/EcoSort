@@ -1,12 +1,15 @@
 import React from 'react'
 import Nav from '../components/nav'
-import StatsList from '../components/statsList'
+import TruckList from '../components/truckList'
+import AddGarbageTruck from '../components/addnewtruck'
 
 function Trucks() {
   return (
     <>
     <Nav/>
-    <StatsList/>
+    <TruckList/>
+    <AddGarbageTruck/>
+
     </>
   )
 }

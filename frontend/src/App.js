@@ -9,6 +9,7 @@ import Pickups from "./Pages/pickups";
 import Stats from "./Pages/stats";
 import Trucks from "./Pages/trucks";
 import Workforce from "./Pages/workforce";
+import Report from "./Pages/report";
 
 function App() {
   const router = createBrowserRouter([
@@ -47,6 +48,10 @@ function App() {
     {
       path: "/workforce",
       element: <Workforce/>,
+    },
+    {
+      path: "/report",
+      element: <Report/>,
     },
   ]);
   return (

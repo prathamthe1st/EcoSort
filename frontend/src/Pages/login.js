@@ -1,5 +1,6 @@
 import {React,useState} from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -42,7 +43,7 @@ function Login() {
             onChange={(event) => setPassword(event.target.value)}
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit"><Link to="/userDashboard">Login</Link></button>
       </form>
       </div>
     );
